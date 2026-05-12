@@ -54,3 +54,27 @@ const translations = {
         footer_copy: "All rights reserved © 2026 Regula"
     }
 };
+
+let currentLang = "en";
+
+const langToggleBtn = document.getElementById("langToggle");
+
+if (langToggleBtn) {
+    langToggleBtn.innerText = "ES";
+
+    langToggleBtn.addEventListener("click", () => {
+        currentLang = currentLang === "en" ? "es" : "en";
+        langToggleBtn.innerText = currentLang === "en" ? "ES" : "EN";
+        translate();
+    });
+}
+
+function translate() {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+
+        if (translations[currentLang][key]) {
+            el.innerHTML = translations[currentLang][key];
+        }
+    });
+}
