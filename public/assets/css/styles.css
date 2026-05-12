@@ -1,0 +1,678 @@
+/* =========================
+   RESET
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#031b33;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+:root{
+    --bg:#041c34;
+    --bg2:#08284b;
+    --card:#f5f7fb;
+    --text:#ffffff;
+    --muted:#b8c2cf;
+    --accent:#ff6b1a;
+    --border:#163757;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar{
+    width:100%;
+    height:80px;
+    padding:0 60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:fixed;
+    top:0;
+    z-index:1000;
+
+    background:rgba(3,20,40,.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:1.3rem;
+    font-weight:700;
+}
+
+.logo span{
+    letter-spacing:1px;
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#d5dce6;
+    font-size:.95rem;
+    transition:.3s;
+    position:relative;
+}
+
+nav a:hover,
+nav a.active{
+    color:#fff;
+}
+
+nav a.active::after{
+    content:"";
+    width:100%;
+    height:2px;
+    background:var(--accent);
+    position:absolute;
+    left:0;
+    bottom:-10px;
+}
+
+.nav-actions{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.btn-signin{
+    border:1px solid rgba(255,255,255,.2);
+    color:#fff;
+    padding:10px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-signin:hover{
+    background:rgba(255,255,255,.06);
+}
+
+.btn-signup{
+    background:var(--accent);
+    color:#fff;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-signup:hover{
+    transform:translateY(-2px);
+}
+
+.lang-btn{
+    background:transparent;
+    border:1px solid rgba(255,255,255,.2);
+    color:#fff;
+    padding:10px 14px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero{
+    min-height:100vh;
+
+    background:
+            linear-gradient(135deg,
+            #031528 0%,
+            #08284b 50%,
+            #0d3a66 100%);
+
+    display:flex;
+    align-items:center;
+    padding:130px 80px 90px;
+}
+
+.hero-container{
+    max-width:720px;
+}
+
+.hero h1{
+    font-size:4.5rem;
+    line-height:1.05;
+    margin-bottom:25px;
+    font-weight:800;
+}
+
+.hero p{
+    color:var(--muted);
+    font-size:1.15rem;
+    line-height:1.7;
+    max-width:650px;
+}
+
+.buttons{
+    margin-top:35px;
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary{
+    padding:16px 28px;
+    border-radius:14px;
+    border:none;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:var(--accent);
+    color:#fff;
+    box-shadow:0 10px 30px rgba(255,107,26,.25);
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    background:transparent;
+    border:1px solid rgba(255,255,255,.2);
+    color:#fff;
+}
+
+.btn-secondary:hover{
+    background:rgba(255,255,255,.06);
+}
+
+/* HERO METRICS */
+.hero-metrics{
+    margin-top:50px;
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.metric{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+
+    padding:18px;
+    border-radius:16px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    min-width:220px;
+}
+
+.icon-box{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    background:rgba(255,107,26,.15);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:var(--accent);
+    font-size:1.1rem;
+}
+
+.metric h4{
+    font-size:.95rem;
+    margin-bottom:4px;
+}
+
+.metric span{
+    font-size:.85rem;
+    color:var(--muted);
+}
+
+.hero-note{
+    margin-top:25px;
+    color:#9fb0c5;
+    font-size:.95rem;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section{
+    padding:110px 80px;
+}
+
+.section-tag{
+    color:var(--accent);
+    letter-spacing:4px;
+    font-size:.8rem;
+    text-align:center;
+    margin-bottom:18px;
+}
+
+section h2{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:22px;
+    line-height:1.2;
+}
+
+.section-desc{
+    max-width:850px;
+    margin:0 auto 55px;
+    text-align:center;
+    color:var(--muted);
+    line-height:1.8;
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about{
+    background:
+            radial-gradient(circle at top,
+            rgba(255,107,26,.12),
+            transparent 40%),
+            #041c34;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:28px;
+}
+
+.about-card{
+    background:#f4f7fb;
+    color:#0b1727;
+
+    border-radius:22px;
+    padding:40px 28px;
+    text-align:center;
+
+    transition:.35s;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+}
+
+.icon-large{
+    font-size:2.6rem;
+    color:var(--accent);
+    margin-bottom:20px;
+}
+
+.about-card h3{
+    font-size:1.3rem;
+    margin-bottom:14px;
+}
+
+.card-line{
+    width:45px;
+    height:4px;
+    background:var(--accent);
+    border-radius:10px;
+    margin:0 auto 18px;
+}
+
+.about-card p{
+    color:#5a6472;
+    line-height:1.7;
+}
+
+/* =========================
+   BENEFITS
+========================= */
+.benefits{
+    background:#031728;
+}
+
+.benefits-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    margin-top:60px;
+}
+
+.benefit-card{
+    background:#09223d;
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:20px;
+    padding:30px;
+
+    display:flex;
+    gap:20px;
+
+    transition:.3s;
+}
+
+.benefit-card:hover{
+    transform:translateY(-6px);
+    border-color:rgba(255,107,26,.5);
+}
+
+.benefit-card i{
+    font-size:1.8rem;
+    margin-top:4px;
+}
+
+.benefit-card h3{
+    margin-bottom:10px;
+    font-size:1.2rem;
+}
+
+.benefit-card p{
+    color:var(--muted);
+    line-height:1.7;
+}
+
+.security-banner{
+    margin-top:60px;
+    background:linear-gradient(90deg,#08284b,#0b335f);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:24px;
+
+    padding:30px 35px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.banner-content{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+.shield-icon{
+    width:70px;
+    height:70px;
+    border-radius:20px;
+
+    background:rgba(255,107,26,.18);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:var(--accent);
+    font-size:1.6rem;
+}
+
+.enterprise-link{
+    background:var(--accent);
+    color:#fff;
+    text-decoration:none;
+    padding:15px 22px;
+    border-radius:12px;
+    font-weight:600;
+}
+
+/* =========================
+   PRICING
+========================= */
+.pricing{
+    background:#041b33;
+}
+
+.pricing-toggle{
+    display:flex;
+    justify-content:center;
+    margin:40px 0;
+    gap:10px;
+}
+
+.pricing-toggle button{
+    border:none;
+    padding:12px 24px;
+    border-radius:999px;
+    background:#0d2a48;
+    color:#fff;
+    cursor:pointer;
+}
+
+.pricing-toggle .active{
+    background:var(--accent);
+}
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:28px;
+}
+
+.price-card{
+    background:#f4f7fb;
+    color:#0f1727;
+
+    border-radius:24px;
+    padding:38px 30px;
+    position:relative;
+
+    transition:.35s;
+}
+
+.price-card:hover{
+    transform:translateY(-8px);
+}
+
+.popular{
+    border:3px solid var(--accent);
+}
+
+.badge{
+    position:absolute;
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%);
+
+    background:var(--accent);
+    color:#fff;
+
+    padding:8px 18px;
+    border-radius:999px;
+    font-size:.85rem;
+    font-weight:600;
+}
+
+.plan-header{
+    font-size:1.4rem;
+    font-weight:700;
+    margin-bottom:12px;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.plan-header i{
+    color:var(--accent);
+}
+
+.plan-desc{
+    color:#5e6978;
+    margin-bottom:25px;
+}
+
+.price{
+    font-size:3rem;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.price span{
+    font-size:1.5rem;
+}
+
+.price small{
+    font-size:1rem;
+    color:#6d7683;
+}
+
+.price-card ul{
+    list-style:none;
+    margin-bottom:30px;
+}
+
+.price-card li{
+    margin-bottom:14px;
+    color:#45515f;
+}
+
+.price-card li i{
+    color:#22c55e;
+    margin-right:8px;
+}
+
+.btn-outline{
+    width:100%;
+    padding:15px;
+    border-radius:12px;
+
+    background:transparent;
+    border:1px solid #d0d7e2;
+
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* =========================
+   FAQ
+========================= */
+.faq{
+    background:#031728;
+}
+
+.faq-container{
+    max-width:900px;
+    margin:60px auto 0;
+}
+
+.faq-item{
+    background:#08223e;
+    border:1px solid rgba(255,255,255,.06);
+
+    padding:22px 25px;
+    border-radius:18px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:18px;
+
+    transition:.3s;
+}
+
+.faq-item:hover{
+    border-color:rgba(255,107,26,.5);
+}
+
+.faq-item span{
+    font-size:1rem;
+}
+
+.icon-circle{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:992px){
+
+    .navbar{
+        padding:0 25px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero{
+        padding:140px 30px 80px;
+    }
+
+    .hero h1{
+        font-size:3.2rem;
+    }
+
+    section{
+        padding:90px 30px;
+    }
+
+    section h2{
+        font-size:2.4rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.7rem;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+    }
+
+    .hero-metrics{
+        flex-direction:column;
+    }
+
+    .metric{
+        width:100%;
+    }
+
+    section h2{
+        font-size:2rem;
+    }
+
+    .pricing-grid,
+    .about-grid,
+    .benefits-grid{
+        grid-template-columns:1fr;
+    }
+}
