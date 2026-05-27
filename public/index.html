@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -103,9 +104,106 @@
         </div>
     </section>
 
+    <section class="our-team" id="our-team">
+
+    <div class="section-tag">
+        <span class="line"></span>
+        <span data-i18n="team_title">Our Team</span>
+        <span class="line"></span>
+    </div>
+
+    <h2 data-i18n="team_subtitle">
+        Meet the professionals behind REGULA
+    </h2>
+
+    <p class="team-intro" data-i18n="team_intro">
+        A multidisciplinary team focused on innovation,
+        operational efficiency and intelligent monitoring solutions.
+    </p>
+
+    <div class="team-grid">
+
+        <div class="team-member">
+            <img src="assets/images/Fabrizio.png" alt="Fabrizio">
+            <h4>Fabrizio Tello</h4>
+            <span class="role">Frontend Developer</span>
+            <button class="team-btn"
+                    onclick="openModal(
+                    'Fabrizio Tello',
+                    'Frontend developer focused on creating modern interfaces and intuitive user experiences for REGULA.'
+                    )">
+                View Profile
+            </button>
+        </div>
+
+        <div class="team-member">
+            <img src="assets/images/Kevin.jpeg" alt="Kevin">
+            <h4>Kevin Lopez</h4>
+            <span class="role">Backend Developer</span>
+            <button class="team-btn"
+                    onclick="openModal(
+                    'Kevin Lopez',
+                    'Backend specialist responsible for APIs, database management and system architecture.'
+                    )">
+                View Profile
+            </button>
+        </div>
+
+        <div class="team-member">
+            <img src="assets/images/David.png" alt="David">
+            <h4>David Vivar</h4>
+            <span class="role">UI/UX Designer</span>
+            <button class="team-btn"
+                    onclick="openModal(
+                    'David Vivar',
+                    'Focused on interface design, user experience and visual consistency throughout the platform.'
+                    )">
+                View Profile
+            </button>
+        </div>
+
+        <div class="team-member">
+            <img src="assets/images/Leonardo.png" alt="Leonardo">
+            <h4>Leonardo Lopez</h4>
+            <span class="role">Project Manager</span>
+            <button class="team-btn"
+                    onclick="openModal(
+                    'Leonardo Lopez',
+                    'Responsible for project planning, organization and team coordination.'
+                    )">
+                View Profile
+            </button>
+        </div>
+
+        <div class="team-member">
+            <img src="assets/images/Elias.jpeg" alt="Elias">
+            <h4>Elias Ramos</h4>
+            <span class="role">Systems Analyst</span>
+            <button class="team-btn"
+                    onclick="openModal(
+                    'Elias Ramos',
+                    'Systems analyst dedicated to operational processes and monitoring optimization.'
+                    )">
+                View Profile
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<div class="team-modal" id="teamModal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">
+            &times;
+        </span>
+        <h3 id="modalName"></h3>
+        <p id="modalDescription"></p>
+    </div>
+</div>
 
     <section id="features" class="benefits">
-        <div class="section-tag" data-i18n="features_title"></div>
+        <div class="section-tag"><span class="line"></span> <span data-i18n="features_title"> Benefits </span><span class="line"></span></div>
+        
         <h2 data-i18n="benefits_title"></h2>
 
         <div class="benefits-grid">
@@ -168,7 +266,9 @@
 
 
     <section id="about-product" class="about-product">
+        
         <div class="product-video">
+            <div class="section-tag"><span class="line"></span> <span data-i18n="video_tittle">Video about the product</span><span class="line"></span></div>
             <h2 data-i18n="video_tittle">Video About the Product</h2>
 
              <div class="video-placeholder">
@@ -181,7 +281,7 @@
 
 
     <section id="pricing" class="pricing">
-        <div class="section-tag" data-i18n="nav_pricing">PLANS</div>
+        <div class="section-tag"><span class="line"></span> <span data-i18n="pricing_head">Pricing</span><span class="line"></span></div>
         <h2 data-i18n="pricing_title">Choose the right plan for your gas operation</h2>
 
         <div class="pricing-toggle">
@@ -263,33 +363,153 @@
     </section>
 
     <section id="faq" class="faq">
-        <div class="section-tag" style="letter-spacing: 5px;">F A Q</div>
-        <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+    <div class="section-tag" style="letter-spacing: 5px;">
+        F A Q
+    </div>
 
-        <div class="faq-container">
-            <div class="faq-item">
-                <span data-i18n="faq_1">Does Regula detect gas leaks in real time?</span>
-                <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
+    <h2 data-i18n="faq_title">
+        Frequently Asked Questions
+    </h2>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">
+                <span data-i18n="faq_1">
+                    Does Regula detect gas leaks in real time?
+                </span>
+
+                <div class="icon-circle">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
             </div>
-            <div class="faq-item">
-                <span data-i18n="faq_2">What processes can I manage from the platform?</span>
-                <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
-            </div>
-            <div class="faq-item">
-                <span data-i18n="faq_3">Is Regula suitable for small distributors?</span>
-                <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
-            </div>
-            <div class="faq-item">
-                <span data-i18n="faq_4">Can I track delivery drivers in real time?</span>
-                <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
-            </div>
-            <div class="faq-item">
-                <span data-i18n="faq_5">Can I register customers who buy on credit?</span>
-                <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
+            <div class="faq-answer" data-i18n="answer_1">
+                Yes. Regula continuously monitors gas cylinders
+                and instantly alerts operators when abnormal
+                gas leak patterns are detected.
             </div>
         </div>
-    </section>
 
+        <div class="faq-item">
+            <div class="faq-question">
+                <span data-i18n="faq_2">
+                    What processes can I manage from the platform?
+                </span>
+                <div class="icon-circle">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="faq-answer" data-i18n="answer_2">
+                You can manage inventory, deliveries,
+                customer records, routes and operational monitoring.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span data-i18n="faq_3">
+                    Is Regula suitable for small distributors?
+                </span>
+                <div class="icon-circle">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="faq-answer" data-i18n="answer_3">
+                Absolutely. Regula adapts to both
+                small and large gas distribution operations.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span data-i18n="faq_4">
+                    Can I track delivery drivers in real time?
+                </span>
+                <div class="icon-circle">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="faq-answer" data-i18n="answer_4">
+                Yes. The platform provides live tracking
+                and route monitoring for delivery drivers.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                <span data-i18n="faq_5">
+                    Can I register customers who buy on credit?
+                </span>
+                <div class="icon-circle">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="faq-answer" data-i18n="answer_5">
+                Yes. Regula allows customer credit management,
+                payment tracking and debt monitoring.
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+            <div class="footer-logo">
+                <img src="assets/icons/logo-regula.png" alt="regula logo" width="55" height="auto">
+                <span>REGULA</span>
+            </div>
+            <p data-i18n="footer_text">
+                Smart monitoring and operational control
+                for gas distributors and storage companies.
+            </p>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+            <div class="footer-links">
+            <div class="footer-column">
+                <h4>Navigation</h4>
+                <a href="#">
+                    <i class="fa-solid fa-angle-right"></i>
+                    About Us
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-angle-right"></i>
+                    Benefits
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-angle-right"></i>
+                    FAQ
+                </a>
+            </div>
+
+        <div class="footer-column">
+            <h4>Legal</h4>
+                    <a href="#">
+                        <i class="fa-solid fa-angle-right"></i>
+                        Contact
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-angle-right"></i>
+                        Terms and Conditions
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="copyright">All rights reserved © 2026 Regula</p>
+        </div>
+           
+
+        </div>
+    </footer>
+
+    <script src="assets/js/modal.js"></script>
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/navbar.js"></script>
 </body>
