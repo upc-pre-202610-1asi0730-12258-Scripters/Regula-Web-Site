@@ -41,7 +41,7 @@
 
             <div class="buttons">
                 <a class="btn-secondary" href="#about-product"><i class="fa-regular fa-circle-play"></i><span data-i18n="btn_video_text">Watch introductory video</span></a>
-                <button class="btn-primary" data-i18n="btn_demo"> <i class="fa-solid fa-arrow-right"></i></button>
+                <a class="btn-primary" data-i18n="btn_demo" href="https://regula-frontend.firebaseapp.com/" target="_blank"> <i class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <div class="hero-metrics">
@@ -183,6 +183,19 @@
                     onclick="openModal(
                     'Elias Ramos',
                     'Systems analyst dedicated to operational processes and monitoring optimization.'
+                    )">
+                View Profile
+            </button>
+        </div>
+
+        <div class="team-member">
+            <img src="assets/images/Paul.jpeg" alt="Paul">
+            <h4>Paul Espinoza</h4>
+            <span class="role">Data Analyst</span>
+            <button class="team-btn"
+                    onclick="openModal(
+                    'Paul Espinoza',
+                    'Data analyst focused on performance metrics, operational insights and data-driven decision making.'
                     )">
                 View Profile
             </button>
@@ -451,6 +464,22 @@
     </div>
 </section>
 
+    <section class="form">
+        <div class="form-container">
+            <h2 data-i18n="contact_title">Contact Us</h2>
+            <p data-i18n="contact_desc">
+                Have questions or want to learn more about Regula? Contact us!
+            </p>
+
+            <form action="#" method="post" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
@@ -509,7 +538,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/modal.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/i18n.js"></script>
 </body>

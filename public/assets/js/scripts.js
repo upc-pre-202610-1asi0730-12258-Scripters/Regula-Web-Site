@@ -1,200 +1,58 @@
-const translations = {
-    es: {
-        answer_1: "Sí. Regula monitorea continuamente los balones de gas y alerta instantáneamente a los operadores cuando se detectan patrones anormales de fuga de gas.",
-        answer_2: "Puedes gestionar inventarios, entregas, registros de clientes, rutas y monitoreo operativo.",
-        answer_3: "Absolutamente. Regula se adapta tanto a operaciones de distribución de gas pequeñas como grandes.",
-        answer_4: "Sí. La plataforma proporciona seguimiento en vivo y monitoreo de rutas para los repartidores.",
-        answer_5: "Sí. Regula permite la gestión de créditos de clientes, seguimiento de pagos y monitoreo de deudas.",
-        team_intro: "Un equipo multidisciplinario enfocado en la innovación, eficiencia operativa y soluciones de monitoreo inteligente.",
-        team_title: "Nuestro Equipo",
-        team_subtitle: "Conoce al equipo detrás de REGULA",
-        footer_text: "Monitoreo inteligente y control operativo<br>para distribuidoras y empresas de almacenamiento de gas.",
-        copyright: "Todos los derechos reservados © 2026 Regula",
-        pricing_head: "Precios",
-        video_tittle: "Video sobre el producto",  
-        popular: "Más popular",
-        basic: "Básico",
-        standard: "Estándar",
-        premium: "Premium",
-        pricing_sub1: "Para distribuidores pequeños",
-        pricing_sub2: "Para distribuidores medianos",
-        pricing_sub3: "Para distribuidores grandes",
-        pricing_monthly: "/ mes",
-        pricing_annual: "/ año",
-        metric_text: "Seguro. Confiable. Diseñado para la distribución de gas.",
-        metric_1: "Visibilidad en tiempo real",
-        metric_2: "Prevención de pérdidas",
-        metric_3: "Operaciones más inteligentes",
-        metric_span1: "En cada balón",
-        metric_span2: "Detecta y actúa más rápido",
-        metric_span3: "Optimiza cada ruta",
-        about_desc: "REGULA es una solución tecnológica para empresas de balones de gas que combina monitoreo en tiempo real, control operativo y gestión inteligente.",
-        about_h3_1: "Cómo ayudamos",
-        about_p_1: "Mejora la seguridad, reduce pérdidas, optimiza rutas y digitaliza operaciones.",
-        about_h3_2: "Propuesta de valor",
-        about_p_2: "Centraliza el inventario, el monitoreo del almacén y las alertas en una sola plataforma escalable.",
-        about_h3_3: "Misión",
-        about_p_3: "Desarrollar soluciones tecnológicas innovadoras para empresas de gas a través de IoT.",
-        about_h3_4: "Visión y Valores",
-        about_p_4: "Convertirse en la startup líder en Latinoamérica para el monitoreo operativo inteligente.",
-        pricing_title: "Elige el plan adecuado para tu operación de gas",
-        benefits_title: "Todo lo que necesitas para<br>optimizar tus operaciones",
-        nav_home: "Inicio",
-        nav_about: "Nosotros",
-        nav_features: "Beneficios",
-        nav_pricing: "Precios",
-        nav_faq: "Preguntas Frecuentes",
-        nav_contact: "Contacto",
-        nav_terms: "Términos y Condiciones",
-        hero_title: "Sistema Inteligente<br>de Monitoreo de<br>Balones de Gas",
-        hero_desc: "Monitorea el inventario, optimiza la distribución y responde a incidentes desde una sola plataforma inteligente.",
-        btn_demo: "Iniciar App <i class='fa-solid fa-arrow-right'></i>",
-        btn_video_text: "Ver video introductorio",
-        features_title: "BENEFICIOS",
-        f1: "Control de inventario",
-        f2: "Gestión de distribución",
-        f3: "Prevención de fugas",
-        f4: "Monitoreo en tiempo real",
-        f5: "Reportes inteligentes",
-        f6: "Acceso desde cualquier lugar",
-        p1: "Rastrea el estado de tus almacenes y operaciones en tiempo real con sensores IoT.",
-        p2: "Los sensores IoT detectan fugas de gas de inmediato y envían alertas antes de que ocurran incidentes.",
-        p3: "Gestiona entradas, salidas y niveles de stock con precisión para reducir pérdidas.",
-        p4: "Organiza entregas, rutas y horarios de manera eficiente.",
-        p5: "Accede a reportes visuales y análisis para tomar decisiones basadas en datos.",
-        p6: "Accede a la plataforma desde cualquier dispositivo, en cualquier momento. Operaciones siempre en tus manos.",
-        p7: "Tu data está protegida con seguridad de nivel empresarial y disponibilidad del sistema 24/7.",
-        faq_title: "Preguntas Frecuentes",
-        faq_1: "¿Regula detecta fugas de gas en tiempo real?",
-        faq_2: "¿Qué procesos puedo gestionar desde la plataforma?",
-        faq_3: "¿Regula es adecuado para distribuidores pequeños?",
-        faq_4: "¿Puedo rastrear a los repartidores en tiempo real?",
-        faq_5: "¿Puedo registrar clientes que compran a crédito?",
-        benefits_h4: "Seguridad y confiabilidad en la que puedes confiar.",
-        footer_desc: "Monitoreo inteligente y control operativo<br>para distribuidoras y empresas de almacenamiento de gas.",
-        footer_nav: "Navegación",
-        footer_legal: "Legal",
-        footer_copy: "Todos los derechos reservados © 2026 Regula",
-        price_text1: "Entradas y salidas de inventario",
-        price_text2: "Visión general del stock",
-        price_text3: "Historial básico de movimientos",
-        price_text4: "Todo lo que hay en Básico",
-        price_text5: "Alertas de fugas de gas",
-        price_text6: "Seguimiento de entregas",
-        price_text7: "Todo lo que hay en Estándar",
-        price_text8: "Monitoreo en tiempo real completo",
-        price_text9: "Analytics avanzados"
-    },
-    en: {
-        answer_1: "Yes. Regula continuously monitors gas cylinders and instantly alerts operators when abnormal gas leak patterns are detected.",
-        answer_2: "You can manage inventory, deliveries, customer records, routes and operational monitoring.",
-        answer_3: "Absolutely. Regula adapts to both small and large gas distribution operations.",
-        answer_4: "Yes. The platform provides live tracking and route monitoring for delivery drivers.",
-        answer_5: "Yes. Regula allows customer credit management, payment tracking and debt monitoring.",
-        team_intro: "A multidisciplinary team focused on innovation, operational efficiency and intelligent monitoring solutions.",
-        team_title: "Our Team",
-        team_subtitle: "Meet the team behind REGULA",
-        footer_text: "Smart monitoring and operational control<br>for gas distributors and storage companies.",
-        copyright: "All rights reserved © 2026 Regula",
-        pricing_head: "Pricing",
-        video_tittle: "Video About the Product",
-        popular: "Most popular",
-        basic: "Basic",
-        standard: "Standard",
-        premium: "Premium",
-        pricing_sub1: "For small distributors",
-        pricing_sub2: "For medium distributors",
-        pricing_sub3: "For large distributors",
-        pricing_monthly: "/ month",
-        pricing_annual: "/ year",
-        metric_text: "Secure. Reliable. Built for gas distribution.",
-        metric_span1: "Across every cylinder",
-        metric_span2: "Detect and act faster",
-        metric_span3: "Optimize every route",
-        metric_1: "Real-time visibility",
-        metric_2: "Loss prevention",
-        metric_3: "Smarter operations",
-        about_desc: "REGULA is a technological solution for gas cylinder companies that combines real-time monitoring, operational control, and intelligent management.",
-        about_h3_1: "How We Help",
-        about_p_1: "Improves safety, reduces losses, optimizes routes, and digitalizes operations.",
-        about_h3_2: "Value Proposition",
-        about_p_2: "Centralizes inventory, warehouse monitoring, and alerts in one scalable platform.",
-        about_h3_3: "Mission",
-        about_p_3: "Develops innovative technological solutions for gas companies through IoT.",
-        about_h3_4: "Vision & Values",
-        about_p_4: "Becomes the leading startup in Latin America for intelligent operational monitoring.",
-        pricing_title: "Choose the right plan for your gas operation",
-        benefits_title: "Everything you need to<br>optimize your operations",
-        nav_home: "Home",
-        nav_about: "About Us",
-        nav_features: "Benefits",
-        nav_pricing: "Pricing",
-        nav_faq: "FAQ",
-        nav_contact: "Contact",
-        nav_terms: "Terms and Conditions",
-        hero_title: "Intelligent Gas<br>Cylinder<br>Monitoring System",
-        hero_desc: "Monitor inventory, optimize distribution, and respond to incidents from one intelligent platform.",
-        btn_demo: "Start App <i class='fa-solid fa-arrow-right'></i>",
-        btn_video_text: "Watch introductory video",
-        features_title: "BENEFITS",
-        f1: "Inventory control",
-        f2: "Distribution management",
-        f3: "Gas leak prevention",
-        f4: "Real-time monitoring",
-        f5: "Smart reports",
-        f6: "Access anywhere",
-        p1: "Track the status of your warehouses and operations in real time with IoT sensors.",
-        p2: "IoT sensors detect gas leaks immediately and send alerts before incidents happen.",
-        p3: "Manage entries, exits and stock levels accurately to reduce losses.",
-        p4: "Organize deliveries, routes and schedules efficiently.",
-        p5: "Access visual reports and analytics to make data-driven decisions.",
-        p6: "Access the platform from any device, anytime. Operations always in your hands.",
-        p7: "Your data is protected with enterprise-grade security and 24/7 system availability.",
-        faq_title: "Frequently Asked Questions",
-        faq_1: "Does Regula detect gas leaks in real time?",
-        faq_2: "What processes can I manage from the platform?",
-        faq_3: "Is Regula suitable for small distributors?",
-        faq_4: "Can I track delivery drivers in real time?",
-        faq_5: "Can I register customers who buy on credit?",
-        footer_desc: "Smart monitoring and operational control<br>for gas distributors and storage companies.",
-        footer_nav: "Navigation",
-        footer_legal: "Legal",
-        footer_copy: "All rights reserved © 2026 Regula",
-        benefits_h4: "Security and reliability you can trust.",
-        price_text1: "Inventory entries and exits",
-        price_text2: "Stock overview",
-        price_text3: "Basic movement history",
-        price_text4: "Everything in Basic",
-        price_text5: "Gas leak alerts",
-        price_text6: "Delivery tracking",
-        price_text7: "Everything in Standard",
-        price_text8: "Full real-time monitoring",
-        price_text9: "Advanced analytics"
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } 
+    
+    else {
+        navbar.classList.remove('scrolled');
     }
-};
 
-let currentLang = "en";
+});
 
-const langToggleBtn = document.getElementById("langToggle");
+const modal = document.getElementById("teamModal");
+const modalName = document.getElementById("modalName");
+const modalDescription = document.getElementById("modalDescription");
 
-if (langToggleBtn) {
-    langToggleBtn.innerText = "ES";
+function openModal(name, description){
 
-    langToggleBtn.addEventListener("click", () => {
-        currentLang = currentLang === "en" ? "es" : "en";
-        langToggleBtn.innerText = currentLang === "en" ? "ES" : "EN";
-        translate();
-    });
+    modal.style.display = "flex";
+
+    modalName.innerText = name;
+
+    modalDescription.innerText = description;
 }
 
-function translate() {
-    document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
+function closeModal(){
+    modal.style.display = "none";
+}
 
-        if (translations[currentLang][key]) {
-            el.innerHTML = translations[currentLang][key];
+window.addEventListener("click", (e) => {
+
+    if(e.target === modal){
+        closeModal();
+    }
+
+});
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+
+    item.addEventListener("click", () => {
+
+        const isActive = item.classList.contains("active");
+
+        faqItems.forEach(faq => {
+            faq.classList.remove("active");
+        });
+
+        if(!isActive){
+            item.classList.add("active");
         }
-    });
-}
 
-translate();
+    });
+
+});
