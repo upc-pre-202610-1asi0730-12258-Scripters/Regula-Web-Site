@@ -10,242 +10,286 @@
 </head>
 <body>
 
-<header class="navbar">
-    <div class="logo">
-        <img src="assets/images/logo-regula.png" alt="logo" width="30">
-        <span><b>REGULA</b></span>
-    </div>
-
-    <nav id="nav">
-        <a href="#hero" class="active" data-i18n="nav_home">Home</a>
-        <a href="#about" data-i18n="nav_about">About Us</a>
-        <a href="#features" data-i18n="nav_features">Benefits</a>
-        <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
-        <a href="#faq" data-i18n="nav_faq">FAQ</a>
-    </nav>
-
-    <div class="nav-actions">
-        <a href="#" class="btn-signin">Sign In</a>
-        <a href="#" class="btn-signup">Sign Up</a>
-        <button id="langToggle" class="lang-btn">EN</button>
-    </div>
-</header>
-
-<section id="hero" class="hero">
-    <div class="hero-container">
-        <h1 data-i18n="hero_title">Intelligent Gas<br>Cylinder<br>Monitoring System</h1>
-        <p data-i18n="hero_desc">
-            Monitor inventory, optimize distribution, and respond to incidents from one intelligent platform.
-        </p>
-
-        <div class="buttons">
-            <button class="btn-secondary" data-i18n="btn_video"><i class="fa-regular fa-circle-play"></i> Watch introductory video</button>
-            <button class="btn-primary" data-i18n="btn_demo">Request demo <i class="fa-solid fa-arrow-right"></i></button>
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/icons/logo-regula.png" alt="logo" width="55" height="auto">
+            <span><b>REGULA</b></span>
         </div>
 
-        <div class="hero-metrics">
-            <div class="metric">
-                <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
-                <div>
-                    <h4>Real-time visibility</h4>
-                    <span>Across every cylinder</span>
+        <nav id="nav">
+            <a href="#hero" class="active" data-i18n="nav_home">Home</a>
+            <a href="#about" data-i18n="nav_about">About Us</a>
+            <a href="#features" data-i18n="nav_features">Benefits</a>
+            <a href="#pricing" data-i18n="nav_pricing">Pricing</a>
+            <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="#" class="btn-signin">Sign In</a>
+            <a href="#" class="btn-signup">Sign Up</a>
+            <button id="langToggle" class="lang-btn">EN</button>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <h1 data-i18n="hero_title">Intelligent Gas<br>Cylinder<br>Monitoring System</h1>
+            <p data-i18n="hero_desc">
+                Monitor inventory, optimize distribution, and respond to incidents from one intelligent platform.
+            </p>
+
+            <div class="buttons">
+                <a class="btn-secondary" href="#about-product"><i class="fa-regular fa-circle-play"></i><span data-i18n="btn_video_text">Watch introductory video</span></a>
+                <button class="btn-primary" data-i18n="btn_demo"> <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <div class="hero-metrics">
+                <div class="metric">
+                    <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
+                    <div>
+                        <h4 data-i18n="metric_1"></h4>
+                        <span data-i18n="metric_span1"></span>
+                    </div>
+                </div>
+                <div class="metric">
+                    <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div>
+                        <h4 data-i18n="metric_2"></h4>
+                        <span data-i18n="metric_span2"></span>
+                    </div>
+                </div>
+                <div class="metric">
+                    <div class="icon-box"><i class="fa-solid fa-truck-fast"></i></div>
+                    <div>
+                        <h4 data-i18n="metric_3"></h4>
+                        <span data-i18n="metric_span3"></span>
+                    </div>
                 </div>
             </div>
-            <div class="metric">
-                <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+            <p class="hero-note" data-i18n="metric_text"></p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-tag"><span class="line"></span> ABOUT REGULA <span class="line"></span></div>
+        <h2 data-i18n="nav_about">About Us</h2>
+        <p class="section-desc" data-i18n="about_desc"></p>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <i class="fa-solid fa-shield-cat icon-large"></i>
+                <h3 data-i18n="about_h3_1"></h3>
+                <div class="card-line"></div>
+                <p data-i18n="about_p_1"></p>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-laptop-medical icon-large"></i>
+                <h3 data-i18n="about_h3_2"></h3>
+                <div class="card-line"></div>
+                <p data-i18n="about_p_2"></p>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-satellite-dish icon-large"></i>
+                <h3 data-i18n="about_h3_3"></h3>
+                <div class="card-line"></div>
+                <p data-i18n="about_p_3"></p>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-users-gear icon-large"></i>
+                <h3 data-i18n="about_h3_4"  ></h3>
+                <div class="card-line"></div>
+                <p data-i18n="about_p_4"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="features" class="benefits">
+        <div class="section-tag" data-i18n="features_title"></div>
+        <h2 data-i18n="benefits_title"></h2>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <i class="fa-solid fa-location-dot" style="color: var(--accent)"></i>
                 <div>
-                    <h4>Loss prevention</h4>
-                    <span>Detect and act faster</span>
+                    <h3 data-i18n="f4"></h3>
+                    <p data-i18n="p1"></p>
                 </div>
             </div>
-            <div class="metric">
-                <div class="icon-box"><i class="fa-solid fa-truck-fast"></i></div>
+            <div class="benefit-card">
+                <i class="fa-solid fa-shield-halved" style="color: #22c55e"></i>
                 <div>
-                    <h4>Smarter operations</h4>
-                    <span>Optimize every route</span>
+                    <h3 data-i18n="f3"></h3>
+                    <p data-i18n="p2"></p>
+                </div>
+            </div>
+            <div class="benefit-card">
+                <i class="fa-solid fa-box-open" style="color: #60a5fa"></i>
+                <div>
+                    <h3 data-i18n="f1">Inventory control</h3>
+                    <p data-i18n="p3"></p>
+                </div>
+            </div>
+            <div class="benefit-card">
+                <i class="fa-solid fa-truck" style="color: #d1d5db"></i>
+                <div>
+                    <h3 data-i18n="f2">Distribution management</h3>
+                    <p data-i18n="p4"></p>
+                </div>
+            </div>
+            <div class="benefit-card">
+                <i class="fa-solid fa-chart-simple" style="color: #2dd4bf"></i>
+                <div>
+                    <h3 data-i18n="f5"></h3>
+                    <p data-i18n="p5"></p>
+                </div>
+            </div>
+            <div class="benefit-card">
+                <i class="fa-solid fa-mobile-screen" style="color: #4ade80"></i>
+                <div>
+                    <h3 data-i18n="f6"></h3>
+                    <p data-i18n="p6"></p>
                 </div>
             </div>
         </div>
-        <p class="hero-note">Secure. Reliable. Built for gas distribution.</p>
-    </div>
-</section>
 
-<section id="about" class="about">
-    <div class="section-tag"><span class="line"></span> ABOUT REGULA <span class="line"></span></div>
-    <h2 data-i18n="nav_about">About Us</h2>
-    <p class="section-desc">REGULA is a technological solution for gas cylinder companies that combines real-time monitoring, operational control, and intelligent management.</p>
-
-    <div class="about-grid">
-        <div class="about-card">
-            <i class="fa-solid fa-shield-cat icon-large"></i>
-            <h3>How We Help</h3>
-            <div class="card-line"></div>
-            <p>Improves safety, reduces losses, optimizes routes, and digitalizes operations.</p>
+        <div class="security-banner">
+            <div class="banner-content">
+                <div class="shield-icon"><i class="fa-solid fa-shield"></i></div>
+                <div>
+                    <h4 data-i18n="benefits_h4"></h4>
+                    <p data-i18n="p7"></p>
+                </div>
+            </div>
+            <a href="#" class="enterprise-link">Enterprise security</a>
         </div>
-        <div class="about-card">
-            <i class="fa-solid fa-laptop-medical icon-large"></i>
-            <h3>Value Proposition</h3>
-            <div class="card-line"></div>
-            <p>Centralizes inventory, warehouse monitoring, and alerts in one scalable platform.</p>
-        </div>
-        <div class="about-card">
-            <i class="fa-solid fa-satellite-dish icon-large"></i>
-            <h3>Mission</h3>
-            <div class="card-line"></div>
-            <p>Develop innovative technological solutions for gas companies through IoT.</p>
-        </div>
-        <div class="about-card">
-            <i class="fa-solid fa-users-gear icon-large"></i>
-            <h3>Vision & Values</h3>
-            <div class="card-line"></div>
-            <p>Become the leading startup in Latin America for intelligent operational monitoring.</p>
-        </div>
-    </div>
-</section>
+    </section>
 
 
-<section id="features" class="benefits">
-    <div class="section-tag" data-i18n="features_title">BENEFITS</div>
-    <h2>Everything you need to<br>optimize your operations</h2>
 
-    <div class="benefits-grid">
-        <div class="benefit-card">
-            <i class="fa-solid fa-location-dot" style="color: var(--accent)"></i>
-            <div>
-                <h3>Real-time monitoring</h3>
-                <p>Track the status of your warehouses and operations in real time with IoT sensors.</p>
+    <section id="about-product" class="about-product">
+        <div class="product-video">
+            <h2 data-i18n="video_tittle">Video About the Product</h2>
+
+             <div class="video-placeholder">
+            <i class="fa-solid fa-play"></i>
+            <p>Product video coming soon</p>
+        </div>
+        </div>
+    </section>
+
+
+
+    <section id="pricing" class="pricing">
+        <div class="section-tag" data-i18n="nav_pricing">PLANS</div>
+        <h2 data-i18n="pricing_title">Choose the right plan for your gas operation</h2>
+
+        <div class="pricing-toggle">
+            <button class="active" data-i18n="pricing_monthly">Monthly</button>
+            <button data-i18n="pricing_annual">Annual</button>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="price-card">
+                <div class="plan-header" data-i18n="basic">
+                    <i class="fa-solid fa-cube"></i> Basic
+                </div>
+                <p class="plan-desc" data-i18n="pricing_sub1">For small distributors</p>
+                <div class="price"><span>S/</span> 99 <small data-i18n="pricing_monthly">/ month</small></div>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span data-i18n="price_text1">Inventory entries and exits</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check" ></i>
+                        <span data-i18n="price_text2">Stock overview</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check" ></i>
+                        <span data-i18n="price_text3">Basic movement history</span>
+                    </li>
+                </ul>
+                <button class="btn-outline">Choose Basic</button>
+            </div>
+
+            <div class="price-card popular">
+                <div class="badge" data-i18n="popular">Most popular</div>
+                <div class="plan-header" data-i18n="standard">
+                    <i class="fa-solid fa-star"></i> Standard
+                </div>
+                <p class="plan-desc" data-i18n="pricing_sub2">For growing operations</p>
+                <div class="price"><span>S/</span> 199 <small data-i18n="pricing_monthly">/ month</small></div>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-circle-check" ></i>
+                        <span data-i18n="price_text4">Everything in Basic</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check" ></i>
+                        <span data-i18n="price_text5">Gas leak alerts</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check" ></i>
+                        <span data-i18n="price_text6">Delivery tracking</span>
+                    </li>
+                </ul>
+                <button class="btn-primary">Choose Standard</button>
+            </div>
+
+            <div class="price-card">
+                <div class="plan-header" data-i18n="premium">
+                    <i class="fa-solid fa-gem"></i> Premium
+                </div>
+                <p class="plan-desc" data-i18n="pricing_sub3">For multiple sites</p>
+                <div class="price"><span>S/</span> 349 <small data-i18n="pricing_monthly">/ month</small></div>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-circle-check" ></i>
+                        <span data-i18n="price_text7">Everything in Standard</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check" ></i>
+                        <span data-i18n="price_text8">Full real-time monitoring</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-check" ></i>
+                        <span data-i18n="price_text9">Advanced analytics</span>
+                    </li>
+                </ul>
+                <button class="btn-outline">Choose Premium</button>
             </div>
         </div>
-        <div class="benefit-card">
-            <i class="fa-solid fa-shield-check" style="color: #22c55e"></i>
-            <div>
-                <h3>Gas leak prevention</h3>
-                <p>IoT sensors detect gas leaks immediately and send alerts before incidents happen.</p>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="section-tag" style="letter-spacing: 5px;">F A Q</div>
+        <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <span data-i18n="faq_1">Does Regula detect gas leaks in real time?</span>
+                <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+            <div class="faq-item">
+                <span data-i18n="faq_2">What processes can I manage from the platform?</span>
+                <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+            <div class="faq-item">
+                <span data-i18n="faq_3">Is Regula suitable for small distributors?</span>
+                <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+            <div class="faq-item">
+                <span data-i18n="faq_4">Can I track delivery drivers in real time?</span>
+                <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+            <div class="faq-item">
+                <span data-i18n="faq_5">Can I register customers who buy on credit?</span>
+                <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
             </div>
         </div>
-        <div class="benefit-card">
-            <i class="fa-solid fa-box-open" style="color: #60a5fa"></i>
-            <div>
-                <h3 data-i18n="f1">Inventory control</h3>
-                <p>Manage entries, exits and stock levels accurately to reduce losses.</p>
-            </div>
-        </div>
-        <div class="benefit-card">
-            <i class="fa-solid fa-truck" style="color: #d1d5db"></i>
-            <div>
-                <h3 data-i18n="f2">Distribution management</h3>
-                <p>Organize deliveries, routes and schedules efficiently.</p>
-            </div>
-        </div>
-        <div class="benefit-card">
-            <i class="fa-solid fa-chart-simple" style="color: #2dd4bf"></i>
-            <div>
-                <h3>Smart reports</h3>
-                <p>Access visual reports and analytics to make data-driven decisions.</p>
-            </div>
-        </div>
-        <div class="benefit-card">
-            <i class="fa-solid fa-mobile-screen" style="color: #4ade80"></i>
-            <div>
-                <h3>Access anywhere</h3>
-                <p>Access the platform from any device, anytime. Operations always in your hands.</p>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <div class="security-banner">
-        <div class="banner-content">
-            <div class="shield-icon"><i class="fa-solid fa-shield"></i></div>
-            <div>
-                <h4>Security and reliability you can trust</h4>
-                <p>Your data is protected with enterprise-grade security and 24/7 system availability.</p>
-            </div>
-        </div>
-        <a href="#" class="enterprise-link">Enterprise security</a>
-    </div>
-</section>
-
-<section id="pricing" class="pricing">
-    <div class="section-tag" data-i18n="nav_pricing">PLANS</div>
-    <h2>Choose the right plan for your gas<br>operation</h2>
-
-    <div class="pricing-toggle">
-        <button class="active">Monthly</button>
-        <button>Annual</button>
-    </div>
-
-    <div class="pricing-grid">
-        <div class="price-card">
-            <div class="plan-header">
-                <i class="fa-solid fa-cube"></i> Basic
-            </div>
-            <p class="plan-desc">For small distributors</p>
-            <div class="price"><span>S/</span> 99 <small>/ month</small></div>
-            <ul>
-                <li><i class="fa-solid fa-circle-check"></i> Inventory entries and exits</li>
-                <li><i class="fa-solid fa-circle-check"></i> Stock overview</li>
-                <li><i class="fa-solid fa-circle-check"></i> Basic movement history</li>
-            </ul>
-            <button class="btn-outline">Choose Basic</button>
-        </div>
-
-        <div class="price-card popular">
-            <div class="badge">Most popular</div>
-            <div class="plan-header">
-                <i class="fa-solid fa-star"></i> Standard
-            </div>
-            <p class="plan-desc">For growing operations</p>
-            <div class="price"><span>S/</span> 199 <small>/ month</small></div>
-            <ul>
-                <li><i class="fa-solid fa-circle-check"></i> Everything in Basic</li>
-                <li><i class="fa-solid fa-circle-check"></i> Gas leak alerts</li>
-                <li><i class="fa-solid fa-circle-check"></i> Delivery tracking</li>
-            </ul>
-            <button class="btn-primary">Choose Standard</button>
-        </div>
-
-        <div class="price-card">
-            <div class="plan-header">
-                <i class="fa-solid fa-gem"></i> Premium
-            </div>
-            <p class="plan-desc">For multiple sites</p>
-            <div class="price"><span>S/</span> 349 <small>/ month</small></div>
-            <ul>
-                <li><i class="fa-solid fa-circle-check"></i> Everything in Standard</li>
-                <li><i class="fa-solid fa-circle-check"></i> Full real-time monitoring</li>
-                <li><i class="fa-solid fa-circle-check"></i> Advanced analytics</li>
-            </ul>
-            <button class="btn-outline">Choose Premium</button>
-        </div>
-    </div>
-</section>
-
-<section id="faq" class="faq">
-    <div class="section-tag" style="letter-spacing: 5px;">F A Q</div>
-    <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
-
-    <div class="faq-container">
-        <div class="faq-item">
-            <span data-i18n="faq_1">Does Regula detect gas leaks in real time?</span>
-            <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        <div class="faq-item">
-            <span data-i18n="faq_2">What processes can I manage from the platform?</span>
-            <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        <div class="faq-item">
-            <span data-i18n="faq_3">Is Regula suitable for small distributors?</span>
-            <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        <div class="faq-item">
-            <span data-i18n="faq_4">Can I track delivery drivers in real time?</span>
-            <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        <div class="faq-item">
-            <span data-i18n="faq_5">Can I register customers who buy on credit?</span>
-            <div class="icon-circle"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-    </div>
-</section>
-
-<script src="assets/js/scripts.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/navbar.js"></script>
+</body>
