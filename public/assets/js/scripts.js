@@ -1,5 +1,6 @@
 const translations = {
     es: {
+        video_tittle: "Video sobre el producto",  
         popular: "Más popular",
         basic: "Básico",
         standard: "Estándar",
@@ -34,7 +35,7 @@ const translations = {
         hero_title: "Sistema Inteligente<br>de Monitoreo de<br>Balones de Gas",
         hero_desc: "Monitorea el inventario, optimiza la distribución y responde a incidentes desde una sola plataforma inteligente.",
         btn_demo: "Iniciar App <i class='fa-solid fa-arrow-right'></i>",
-        btn_video: "<i class='fa-regular fa-circle-play'></i> Ver video introductorio",
+        btn_video_text: "Ver video introductorio",
         features_title: "BENEFICIOS",
         f1: "Control de inventario",
         f2: "Gestión de distribución",
@@ -71,6 +72,7 @@ const translations = {
         price_text9: "Analytics avanzados"
     },
     en: {
+        video_tittle: "Video About the Product",
         popular: "Most popular",
         basic: "Basic",
         standard: "Standard",
@@ -105,7 +107,7 @@ const translations = {
         hero_title: "Intelligent Gas<br>Cylinder<br>Monitoring System",
         hero_desc: "Monitor inventory, optimize distribution, and respond to incidents from one intelligent platform.",
         btn_demo: "Start App <i class='fa-solid fa-arrow-right'></i>",
-        btn_video: "<i class='fa-regular fa-circle-play'></i> Watch introductory video",
+        btn_video_text: "Watch introductory video",
         features_title: "BENEFITS",
         f1: "Inventory control",
         f2: "Distribution management",
