@@ -161,28 +161,6 @@ document.querySelectorAll(".auth-password-toggle").forEach(button => {
     });
 });
 
-// Contact form
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        contactForm.reset();
-        const success = document.getElementById('contactSuccess');
-        if (success) {
-            success.classList.add('show');
-            setTimeout(() => success.classList.remove('show'), 5000);
-        }
-    });
-}
-
-// Footer "Contact Us" link → show landing and scroll to form
-document.querySelectorAll('.footer-contact-link').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        showLandingSection('#contact-section');
-    });
-});
-
 const DEMO_EMAIL = "prueba@regula.com";
 const DEMO_PASSWORD = "123456";
 
